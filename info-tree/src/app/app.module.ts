@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { LayoutModule } from '@angular/cdk/layout';
-import { MaterialModule } from './material.module';
+import { AppMaterialModule } from './app-material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -20,7 +20,7 @@ import { NavigationComponent } from './structure/navigation/navigation.component
   imports: [
     LayoutModule,
     BrowserModule,
-    MaterialModule,
+    AppMaterialModule,
     AppRoutingModule,
     BrowserAnimationsModule,
   ],
