@@ -1,29 +1,29 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
 import { LayoutModule } from '@angular/cdk/layout';
-import { AppMaterialModule } from './app-material.module';
-import { AppRoutingModule } from './app-routing.module';
+import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { AppRoutingModule } from './app-routing.module';
+import { AppMaterialModule } from './app-material.module';
+
 import { AppComponent } from './app.component';
+import { CardsComponent } from './features/cards/cards.component';
 import { DashboardComponent } from './structure/dashboard/dashboard.component';
 import { NavigationComponent } from './structure/navigation/navigation.component';
-import { CardsComponent } from './features/cards/cards.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent,
+    CardsComponent,
     DashboardComponent,
-    CardsComponent
+    NavigationComponent,
   ],
   imports: [
     LayoutModule,
     BrowserModule,
-    AppMaterialModule,
     AppRoutingModule,
+    AppMaterialModule,
     BrowserAnimationsModule,
   ],
   providers: [],
